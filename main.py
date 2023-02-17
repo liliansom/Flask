@@ -10,5 +10,6 @@ def home():
 def hello_world():
     return render_template('contato.html')
 
+
 if __name__ == '__main__':
     app.run()
