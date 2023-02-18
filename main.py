@@ -12,6 +12,9 @@ def home():
 def hello_world():
     return render_template('contato.html')
 
+@app.route('/repositorio')
+def repositorio():
+    return render_template('repositorio.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
