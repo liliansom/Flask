@@ -6,7 +6,6 @@ Neste website irei realizar minha apresentação pessoal e profissional para fin
 Desenvolvido com VSCode;
 Utilizada linguagem Python 3.10, biblioteca Flask.
 
-
 Este projeto será uma grande oportunidade para o aprendizado da biblioteca Flask e da POO.
 
 # Andamento do projeto:
