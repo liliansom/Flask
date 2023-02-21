@@ -2,10 +2,15 @@
 
 {% block body %}
 <div class="container my-3 bg-primary-subtle border border-primary-subtle rounded-3">
-
-    <h2 class=mt-2>Login</h2>
+    <form method="POST" action="">
+    <legend class=mt-2>Login</legend>
     <hr>
-    {{ {% csrf_token %} }}
+        {{ formlogin.email.label }}
+        {{ formlogin.email }}
+        {{ formlogin.senha.label }}    
+        {{ formlogin.senha }}
+        {{ formlogin.botao_submit }}
+    </form>
 </div>
 <div class="row">
 {% endblock %}

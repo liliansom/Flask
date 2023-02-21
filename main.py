@@ -1,6 +1,9 @@
 from flask import Flask, render_template, url_for
-app = Flask(__name__)
+from forms import FormLogin
 
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'e7d749e499af22c81881782c5e957bf0'
 
 @app.route('/')
 def home():
@@ -17,7 +20,8 @@ def repositorio():
 
 @app.route('/login')
 def login():
-    return render_template('login.html')
+    formlogin = FormLogin()
+    return render_template('login.html', formlogin=formlogin)
 
 if __name__ == '__main__':
     app.run(debug=True)
