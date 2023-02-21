@@ -5,22 +5,34 @@
 <div class="container my-3 bg-primary-subtle border border-primary-subtle rounded-3">
     <h2 class="mt-2">Sobre mim</h2>
     <hr>
-
-        <h6><p>Muito prazer!</p>
-    </div>
-
-        <p>Meu nome é Lilian Matsumoto, tenho 33 anos e sou nascida em São Paulo-SP, mas atualmente moro em Indaiatuba-SP.</p>
-    
-        Como hobbies gosto de jogos (console e boardgames), comida (tanto cozinhar quanto ir aos restaurantes), viajar e tocar violão!</p>
+    <h6><p>Muito prazer!</p>
+    <p>Meu nome é Lilian Matsumoto, tenho 33 anos e sou nascida em São Paulo-SP, mas atualmente moro em Indaiatuba-SP.</p>
+    <p>Como hobbies gosto de jogos, comer comida boa, viajar e tocar violão!</p>
     <p>Ah! Também gosto de assistir séries e fazer artesanatos!</p>
+    <hr>
     <p>Realizei Faculdade de Enfermagem na Universidade de São Paulo e trabalhei 8 anos nas áreas de saúde mental e oncologia.</p>
-    <p>Contudo, sempre tive muito interesse e curiosidade pela área de tecnologia e, então, decidi explorar o Mundo Dev!</p>
+    <p>Apesar disso, sempre tive muito interesse e curiosidade pela área de tecnologia e, então, decidi explorar o Mundo Dev!</p>
+    <p>Estou sempre me atualizando e buscando novas tecnologias para me aprimorar!</p>
     <p>Hoje atuo como Desenvolvedora Back-End e as principais ferramentas que faço uso são:</p>
-    Python<br>
-    Html<br>
-    SQL Server<br>
-    Figma<br>
-
-    </h6>
+    <div class="row container">
+        <div class="col">
+            <strong>Python</strong>
+                <li> Flask </li>
+                <li> Requests </li>
+                <li> Tkinter </li>
+                <li> Pyodbc </li>
+                <li> Pygame </li><br>
+        </div>
+        <div class="col">
+            <strong>SQL Server</strong>
+        </div>
+        <div class="col">
+            <strong>Figma</strong>
+        </div>
+        <div class="col">
+            <strong>Html</strong>
+        </div>
+    </div>
+        <p> Confira a página <a class="nav-link active fw-bold text-black" href="{{ url_for('repositorio') }}">Repositórios</a> e veja os projetos que tenho realizado!</p>    
 </div>
 {% endblock %}
