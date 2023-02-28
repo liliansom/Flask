@@ -14,7 +14,3 @@ Contatos
 [x]Linkedin
 [x]Github
 [ ] Email: Colocar para enviar email diretamente? com forms?
-
-Login
-    Forms ok
-    Fazer forms funcionar

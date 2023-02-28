@@ -18,11 +18,6 @@ def contato():
 def repositorio():
     return render_template('repositorio.html')
 
-@app.route('/login')
-def login():
-    formlogin = FormLogin()
-    return render_template('login.html', formlogin=formlogin)
-
 if __name__ == '__main__':
     app.run(debug=True)
     
