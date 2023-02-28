@@ -1,18 +1,79 @@
-{% extends 'base.html' %}
+<!-- Arquivo html com a página do repositório --> 
 
+{% extends 'base.html' %}
 {% block body %}
 <div class="container my-3 bg-primary-subtle border border-primary-subtle rounded-3">
-
+    <!-- Título --> 
     <h2 class=mt-2>Repositórios</h2>
     <hr>
+    <!-- Container para inserir as informações --> 
+    <div class="row container">
+        <!-- Repositório 6 --> 
+        <div class="col text-center">
+            <img src="{{ url_for('static', filename='img/layout.jpg') }}" alt="imagem" style="max-width: 90%; height: auto;">
+        </div>
+        <div class="col">
+            <h3>Inserir apresentação do projeto</h3>
+            <p>Informações do projeto aqui.</p>
+        </div>
+    <p></p>
+    <hr>
 
-<div class="row container">
-    <div class="col">
-        <h3> inserir foto </h3>
-    </div>
-    <div class="col ">
-        <h3> Inserir apresentação do projeto </h3>
+        <!-- Repositório 5 --> 
+        <div class="col text-center">
+            <img src="{{ url_for('static', filename='img/layout.jpg') }}" alt="imagem" style="max-width: 90%; height: auto;">
+        </div>
+        <div class="col">
+            <h3>Inserir apresentação do projeto</h3>
+            <p>Informações do projeto aqui.</p>
+        </div>
+    <p></p>
+    <hr>
+
+        <!-- Repositório 4 --> 
+        <div class="col text-center">
+            <img src="{{ url_for('static', filename='img/layout.jpg') }}" alt="imagem" style="max-width: 90%; height: auto;">
+        </div>
+        <div class="col">
+            <h3>Inserir apresentação do projeto</h3>
+            <p>Informações do projeto aqui.</p>
+        </div>
+    <p></p>
+    <hr>
+
+        <!-- Repositório 3 --> 
+        <div class="col text-center">
+            <img src="{{ url_for('static', filename='img/layout.jpg') }}" alt="imagem" style="max-width: 90%; height: auto;">
+        </div>
+        <div class="col">
+            <h3>Inserir apresentação do projeto</h3>
+            <p>Informações do projeto aqui.</p>
+        </div>
+    <p></p>
+    <hr>
+
+        <!-- Repositório 2 -->
+        <div class="col text-center">
+            <img src="{{ url_for('static', filename='img/layout.jpg') }}" alt="imagem" style="max-width: 90%; height: auto;">
+        </div>
+        <div class="col">
+            <h3>Inserir apresentação do projeto</h3>
+            <p>Informações do projeto aqui.</p>
+        </div>
+    <p></p>
+    <hr>
+        
+        <!-- Repositório 1 --> 
+        <div class="col text-center">
+            <img src="{{ url_for('static', filename='img/layout.jpg') }}" alt="imagem" style="max-width: 90%; height: auto;">
+        </div>
+        <div class="col">
+            <h3>Inserir apresentação do projeto</h3>
+            <p>Informações do projeto aqui.</p>
+        </div>
+    <p></p>
     <hr>
     </div>
+    <hr>
 </div>
-    {% endblock %}
+{% endblock %}
