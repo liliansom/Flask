@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for
 from forms import FormLogin
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static' )
 app.config['SECRET_KEY'] = 'e7d749e499af22c81881782c5e957bf0'
 
 @app.route('/')
