@@ -1,48 +1,67 @@
-<!-- Arquivo html com a página de apresentação --> 
+<!-- Arquivo html com a página de apresentação -->
 
 {% extends 'base.html' %}
 {% block body %}
-<!-- Container com informações --> 
+<!-- Container com informações -->
 <div class="container my-3 bg-primary-subtle border border-primary-subtle rounded-3">
-    <h2 class="mt-2"; align-items: center>Sobre mim</h2>
+    <h2 class="mt-2" ; align-items: center>Sobre mim</h2>
     <hr>
-    <h4 class="mt-2">Apresentação</h4>
-    <h6><p>Muito prazer!</p>
-    <p>Meu nome é Lilian Matsumoto, tenho 33 anos
-    <p>Sou nascida em São Paulo-SP, mas atualmente moro em Indaiatuba-SP.</p>
-    <p>Como hobbies gosto de jogos, comer comida boa, viajar e tocar violão!</p>
-    <p>Ah! Também gosto de assistir séries e fazer artesanatos!</p></h6>
-    <hr>
-    <h4 class="mt-2">Profissional</h4>
-    <h6><p>Realizei Faculdade de Enfermagem na Universidade de São Paulo e trabalhei 8 anos nas áreas de saúde mental e oncologia.</p>
-    <p>Apesar disso, sempre tive muito interesse e curiosidade pela área de tecnologia e, então, decidi explorar o Mundo Dev!</p>
-    <p>Estou sempre me atualizando e buscando novas tecnologias para me aprimorar!</p>
-    <p>Hoje atuo como Desenvolvedora Back-End e as principais ferramentas que faço uso são:</p></h6>
     <div class="row container">
         <div class="col">
-            <strong>Python</strong>
+            <h4 class="mt-2">Apresentação</h4>
+            <h6>
+                <p>Muito prazer!</p>
+                <p>Meu nome é Lilian Matsumoto e possuo 33 anos.</p>
+                <p>Sou nascida em São Paulo-SP, mas atualmente moro em Indaiatuba-SP.</p>
+                <p>Como hobbies gosto de jogos, comer comida boa, viajar e tocar violão!</p>
+                <p>Ah! Também gosto de assistir séries e fazer artesanatos!</p>
+            </h6>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+            <img src="{{ url_for('static', filename='img/flask.png') }}" alt="imagem" style="max-width: 70%; height: auto;" class="mx-auto">
+        </div>
+        
+        </div>
+        <div style="margin-left: 10px;">
+            <h4 class="mt-4">Profissional</h4>
+            <h6>
+                <p>Realizei Faculdade de Enfermagem na Universidade de São Paulo e trabalhei 8 anos nas áreas de saúde
+                    mental e oncologia.</p>
+                <p>Apesar disso, sempre tive muito interesse e curiosidade pela área de tecnologia e, então, decidi
+                    explorar o Mundo Dev!</p>
+                <p>Estou sempre me atualizando e buscando novas tecnologias para me aprimorar!</p>
+                <p>Hoje atuo como Desenvolvedora Back-End e as principais ferramentas que faço uso são:</p>
+            </h6>
             <div class="row container">
                 <div class="col">
-                    <li>Flask</li>
-                    <li>Pandas</li>
-                    <li>Tkinter</li>
-                    <li>Pyodbc</li>
+                    <strong>Python</strong>
+                    <div class="row container">
+                        <div class="col">
+                            <li>Flask</li>
+                            <li>Pandas</li>
+                            <li>Tkinter</li>
+                            <li>Pyodbc</li>
+                        </div>
+                        <div class="col">
+                            <li>Pygame</li>
+                            <li>Requests</li>
+                            <li>Matplotlib</li><br>
+                        </div>
+                        <div class="col">
+                            <strong>SQL Server</strong>
+                        </div>
+                        <div class="col">
+                            <strong>Html</strong>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <li>Pygame</li>
-                    <li>Requests</li>
-                    <li>Matplotlib</li><br>
+                <p></p>
+                <div style="margin-left: -10px;">
+                    <h6>Confira a página <a class="nav-link active fw-bold text-black" href="{{ url_for('repositorio') }}">Repositórios</a> e veja os projetos que tenho realizado!</h6>
                 </div>
+                
+                      
             </div>    
-        </div>
-        <div class="col">
-            <strong>SQL Server</strong>
-        </div>
-        <div class="col">
-            <strong>Html</strong>
-        </div>
     </div>
-    <br>
-        <p> Confira a página <a class="nav-link active fw-bold text-black" href="{{ url_for('repositorio') }}">Repositórios</a> e veja os projetos que tenho realizado!</p>    
 </div>
-{% endblock %}
+            {% endblock %}
