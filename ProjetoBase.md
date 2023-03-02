@@ -1,16 +1,19 @@
 Homepage
 [x] descrição
-[] formatar bonitinho
+[x] formatar bonitinho
 [] colocar foto?
 
 
 Repositórios
 [x]criado colunas
-[] foto do projeto
-[] descrição do projeto
-[]se clicar: github
+[x] foto do projeto
+[x] descrição do projeto
+[x]se clicar: github
 
 Contatos
 [x]Linkedin
 [x]Github
-[ ] Email: Colocar para enviar email diretamente? com forms?
+[x]E-mail
+
+Servidor Web
+[] Inserir projeto em um servidor web
